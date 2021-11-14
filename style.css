@@ -16,9 +16,38 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    background-color: aquamarine;
+    background-color: cadetblue;
     height: 10vh;
 }
+
+#HOMEspace {
+    height: 100vh;
+    background-color: chocolate;
+}
+
+#ABOUTspace {
+    height: 100vh;
+    background-color:cornflowerblue;
+}
+
+#PRODUCTspace {
+    height: 100vh;
+    background-color: cornsilk;
+}
+
+#CONTACTspace {
+    height: 100vh;
+    background-color: darkblue;
+}
+
+footer {
+    background-color: cadetblue;
+    height: 10vh;
+    text-align: center;
+}
+
+
+
 
 
 
