@@ -13,17 +13,17 @@ body {
     padding:0;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    height: 10vh;
-}
-
 .bg {
     background: url(file:///C:/Users/Owner/poriporiporiImage/laptop-3214756.png) center center no-repeat;/*後でFileZillaからWordPressの画像保管場所のURLに書き換える*/
     background-size: cover;
     background-attachment: fixed;
     }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+}
 
 #HOMEspace {
     height: 100vh;
