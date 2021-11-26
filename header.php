@@ -4,9 +4,11 @@
         <meta charset="utf-8">
         <title></title>
         <meta name="viewport" content="width=device-width, initial-scale1.0">
-        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="script.js">
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>https://unpkg.com/ress/dist/ress.min.css">
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/style.css">
+        <script>src="<?php get_stylesheet_directory_uri();?>script.js"</script>
+    
+        <?php wp_head(); ?>
     </head>
 
     <body>
