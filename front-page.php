@@ -20,12 +20,13 @@
                 </li>
                 <?php endwhile; endif; ?><!--  /ループ終わり -->
             </ul>
-            <div class="btn_stn"><a href="<?php bloginfo('url') ;?>/news">一覧をみる</a></div>
+            <div class="btn_stn"><a href="<?php home_url('') ;?>/news">一覧をみる</a></div>
         </div>
 
-        [contact-form-7 id="6" title="お問い合わせ"]
-<p>お問い合わせはこちらのフォームをご利用ください。</p>
-<label> 氏名
+        
+    <p>お問い合わせはこちらのフォームをご利用ください。</p>
+    [contact-form-7 id="6" title="お問い合わせ"]
+    <label> 氏名
     [text* your-name] </label>
 
 <label> メールアドレス
@@ -35,6 +36,7 @@
     [textarea your-message] </label>
 
 [submit "送信"]
+
     </section>
 
 <?php get_footer() ;?>
