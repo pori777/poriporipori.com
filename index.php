@@ -17,10 +17,10 @@
                 </div>
                 <nav id="menuList">
                     <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="about.html">ABOUT</a></li>
-                        <li><a href="product.html">PRODUCT</a></li>
-                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="https://poriporipori.com">HOME</a></li>
+                        <li><a href="page-about.php">ABOUT</a></li>
+                        <li><a href="page-product.php">PRODUCT</a></li>
+                        <li><a href="page-contact.php">CONTACT</a></li>
                     </ul>
                 </nav>
 
