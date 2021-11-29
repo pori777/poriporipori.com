@@ -1,12 +1,9 @@
 <?php get_header(); ?>
 
-<div id="content" class="page_wrap W_inner">
-
-    <div id="main">
-        <?php the_title() ;?>
-        <p>fjdsklfajadkjfdkla
-            
-        </p>
-    </div>
-</div>
+<!-- お問い合わせフォームの作成
+    namae
+    meado
+    dennwabanngou
+    soudannnaiyou
+-->
 <?php get_footer(); ?>
