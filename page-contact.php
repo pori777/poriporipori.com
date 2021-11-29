@@ -1,15 +1,12 @@
 <?php get_header(); ?>
-[contact-form-7 id="6" title="お問い合わせ"]
-<p>お問い合わせはこちらのフォームをご利用ください。</p>
-<label> 氏名
-    [text* your-name] </label>
 
-<label> メールアドレス
-    [email* your-email] </label>
+<div id="content" class="page_wrap W_inner">
 
-<label> メッセージ本文 
-    [textarea your-message] </label>
-
-[submit "送信"]
-
+    <div id="main">
+        <?php the_title() ;?>
+        <p>fjdsklfajadkjfdkla
+            
+        </p>
+    </div>
+</div>
 <?php get_footer(); ?>
