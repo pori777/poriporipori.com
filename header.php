@@ -20,9 +20,9 @@
                 <nav id="menuList">
                     <ul>
                         <li><a href="<?php home_url(); ?>">HOME</a></li>
-                        <li><a href="<?php home_url(); ?>">ABOUT</a></li>
-                        <li><a href="<?php home_url(); ?>">PRODUCT</a></li>
-                        <li><a href="<?php home_url(); ?>">CONTACT</a></li>
+                        <li><a href="<?php home_url(); ?>/about">ABOUT</a></li>
+                        <li><a href="<?php home_url(); ?>/product">PRODUCT</a></li>
+                        <li><a href="<?php home_url(); ?>/contact">CONTACT</a></li>
                     </ul>
                 </nav>
 
