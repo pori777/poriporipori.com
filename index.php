@@ -17,9 +17,9 @@
                 </div>
                 <nav id="menuList">
                     <ul>
-                        <li><a href="https://poriporipori.com">HOME</a></li>
-                        <li><a href="page-about.php">ABOUT</a></li>
-                        <li><a href="page-product.php">PRODUCT</a></li>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="about">ABOUT</a></li>
+                        <li><a href="">PRODUCT</a></li>
                         <li><a href="page-contact.php">CONTACT</a></li>
                     </ul>
                 </nav>
