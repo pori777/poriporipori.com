@@ -12,7 +12,7 @@
     </head>
 
     <body>
-        <div class="bg" background="https://poriporipori.com/wp-content/uploads/2021/11/laptop-3214756.png">
+        <div class="bg" background='<?php get_stylesheet_directory_uri();?>/wp-content/uploads/poriporiporiImage/laptop3214756.png'>
             <header>
                 <div class="headerTitle">
                     <h1>pori</h1>
