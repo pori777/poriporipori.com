@@ -12,7 +12,7 @@
     </head>
 
     <body>
-        <div class="bg">
+        <div class="bg" background="/poriporiporiImage/laptop3214756.png">
             <header>
                 <div class="headerTitle">
                     <h1>pori</h1>
