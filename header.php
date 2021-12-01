@@ -12,17 +12,17 @@
     </head>
 
     <body>
-        <div class="bg" background='<?php get_stylesheet_directory_uri();?>/wp-content/uploads/poriporiporiImage/laptop3214756.png'>
+        <div class="bg" style='background-image:<?php get_stylesheet_directory_uri();?>/wp-content/uploads/poriporiporiImage/laptop3214756.png';>
             <header>
                 <div class="headerTitle">
                     <h1>pori</h1>
                 </div>
                 <nav id="menuList">
                     <ul>
-                        <li><a href="<?php home_url(); ?>">HOME</a></li>
-                        <li><a href="<?php home_url(); ?>/about">ABOUT</a></li>
-                        <li><a href="<?php home_url(); ?>/product">PRODUCT</a></li>
-                        <li><a href="<?php home_url(); ?>/contact">CONTACT</a></li>
+                        <li><a href="<?php home_url(); ?>front-page.php">HOME</a></li>
+                        <li><a href="<?php home_url(); ?>/page-about.php">ABOUT</a></li>
+                        <li><a href="<?php home_url(); ?>/page-product.php">PRODUCT</a></li>
+                        <li><a href="<?php home_url(); ?>/page-contact.php">CONTACT</a></li>
                     </ul>
                 </nav>
 
