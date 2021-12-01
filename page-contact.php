@@ -6,7 +6,7 @@
     dennwabanngou
     soudannnaiyou
 -->
-
+</div>
     <section>
         <h1>お問い合わせは下記のフォームからお願いします！</h1>
         <p>氏名</p>
