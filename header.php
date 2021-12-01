@@ -19,7 +19,7 @@
                 </div>
                 <nav id="menuList">
                     <ul>
-                        <li><a href="<?php home_url(); ?>front-page.php">HOME</a></li>
+                        <li><a href="<?php home_url(); ?>/front-page.php">HOME</a></li>
                         <li><a href="<?php home_url(); ?>/page-about.php">ABOUT</a></li>
                         <li><a href="<?php home_url(); ?>/page-product.php">PRODUCT</a></li>
                         <li><a href="<?php home_url(); ?>/page-contact.php">CONTACT</a></li>
