@@ -12,7 +12,7 @@
     </head>
 
     <body>
-        <img src="<?php get_template_directory_uri();?>/wp-content/uploads/poriporiporiImage/laptop3214756.png" class="bg">
+        <div class="bg">
             <header>
                 <div class="headerTitle">
                     <h1>pori</h1>
