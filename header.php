@@ -12,7 +12,6 @@
     </head>
 
     <body>
-        <div class="bg">
             <header>
                 <div class="headerTitle">
                     <h1>pori</h1>
