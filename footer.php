@@ -5,7 +5,7 @@
                     <h5>© 2021 pori</h5>
                 </div>
             </footer>
-        </div>
+        </img>
         <script src="<?php get_stylesheet_directory_uri();?>/js/script.js"></script>
         <?php wp_footer(); ?>
     </body>
