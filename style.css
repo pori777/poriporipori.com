@@ -12,6 +12,9 @@ li {
 
 body {
     font-family: serif;
+    background-image: url("poriporiporiImage/laptop-3214756.png");
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 *{
@@ -55,12 +58,6 @@ body {
     opacity: 1;
     transform: translate(0, 0);
 }
-
-.bg {
-    background-image: url("poriporiporiImage/laptop-3214756.png");
-    background-size: cover;
-    background-attachment: fixed;
-    }
 
 header {
     display: flex;
