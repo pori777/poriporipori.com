@@ -12,7 +12,7 @@ li {
 
 body {
     font-family: serif;
-    background-image: url("poriporiporiImage/laptop-3214756.png");
+    background-image: url(poriporiporiImage/laptop-3214756.png);
     background-size: cover;
     background-attachment: fixed;
 }
