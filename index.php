@@ -4,10 +4,10 @@
         <meta charset="utf-8">
         <title></title>
         <meta name="viewport" content="width=device-width, initial-scale1.0">
-        <link rel="stylesheet" href="<?php echo get_template_directory_uri() ; ?>https://unpkg.com/ress/dist/ress.min.css">
-        <link href="<?php echo get_template_directory_uri() ; ?>https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ; ?>https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" media="all" />
-        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ;?>js/script.js">
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+        <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" media="all" />
+        <link rel="stylesheet" href="js/script.js">
         <?php wp_head(); ?>
     </head>
 
