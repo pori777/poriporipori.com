@@ -32,5 +32,3 @@
                 <span class="innerLine" id="line3"></span>
             </div>
         </header>
-        
-        <div class="catchPhraseSpace">
