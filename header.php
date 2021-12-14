@@ -21,8 +21,8 @@
             <nav id="menuList">
                 <ul>
                     <li><a href="<?php  echo esc_url( home_url ( '/' ) ); ?>">HOME</a></li>
-                    <li><a href="<?php echo esc_url( home_url( '/product/' ) ); ?>product-page.php">PRODUCT</a></li>
-                    <li><a href="<?php echo esc_url( home_url( '/contact/' ) );?>contact-page.php">CONTACT</a></li>
+                    <li><a href="<?php echo esc_url( home_url( '/product/' ) ); ?>">PRODUCT</a></li>
+                    <li><a href="<?php echo esc_url( home_url( '/contact/' ) );?>">CONTACT</a></li>
                 </ul>
             </nav>
 
