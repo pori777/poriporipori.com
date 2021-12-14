@@ -1,17 +1,7 @@
 <?php get_header(); ?>
-
-<!-- お問い合わせフォームの作成
-    namae
-    meado
-    dennwabanngou
-    soudannnaiyou
--->
 </div>
     <section>
-        <h1>お問い合わせは下記のフォームからお願いします！</h1>
-        <p>氏名</p>
-        <p>メールアドレス</p>
-        <p>電話番号</p>
-        <p>お問い合わせ内容</p>
+        <h1>お問い合わせは下記のフォームからお願いします!</h1>
+        <?php echo do_shortcode('[contact-form-7 id="38" title="無題"]'); ?>
     </section>
 <?php get_footer(); ?>

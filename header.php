@@ -1,34 +1,36 @@
 <!DOCTYPE html>
-<html lang="ja">
+    <html lang="ja">
     <head>
         <meta charset="utf-8">
         <title></title>
         <meta name="viewport" content="width=device-width, initial-scale1.0">
-        <link rel="stylesheet" href="<?php echo get_template_directory_uri() ;?>/style.css">
-        <script type="text/javascript" src="<?php get_stylesheet_directory_uri();?>/js/script.js"></script>
-    
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+        <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="js/script.js">
         <?php wp_head(); ?>
     </head>
 
     <body>
-            <header>
-                <div class="headerTitle">
-                    <h1>pori</h1>
-                </div>
-                <nav id="menuList">
-                    <ul>
-                        <li><a href="<?php home_url(); ?>/front-page.php">HOME</a></li>
-                        <li><a href="<?php home_url(); ?>/page-about.php">ABOUT</a></li>
-                        <li><a href="<?php home_url(); ?>/page-product.php">PRODUCT</a></li>
-                        <li><a href="<?php home_url(); ?>/page-contact.php">CONTACT</a></li>
-                    </ul>
-                </nav>
+        <div class="bg">
+        <header>
+            <div class="headerTitle">
+                <h1>pori</h1>
+            </div>
+            <nav id="menuList">
+                <ul>
+                    <li><a href="<?php  echo esc_url( home_url ( '/' ) ); ?>">HOME</a></li>
+                    <li><a href="<?php echo esc_url( home_url( '/product/' ) ); ?>product-page.php">PRODUCT</a></li>
+                    <li><a href="<?php echo esc_url( home_url( '/contact/' ) );?>contact-page.php">CONTACT</a></li>
+                </ul>
+            </nav>
 
-                <div id="menuListIcon">
-                    <span class="innerLine" id="line1"></span>
-                    <span class="innerLine" id="line2"></span>
-                    <span class="innerLine" id="line3"></span>
-                </div>
-            </header>
-
-            <div id="HOMEspace">
+            <div id="menuListIcon">
+                <span class="innerLine" id="line1"></span>
+                <span class="innerLine" id="line2"></span>
+                <span class="innerLine" id="line3"></span>
+            </div>
+        </header>
+        
+        <div class="catchPhraseSpace">
