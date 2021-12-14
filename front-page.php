@@ -1,9 +1,10 @@
 <?php get_header() ;?>
-<div class="catchPhrase">
-                <h1>お客様の要望に合ったサイトを<br>
-                    スムーズなコミュニケーションで</h1>
-            </div>
+    <div class="catchPhraseSpace">
+        <div class="catchPhrase">
+            <h1>お客様の要望に合ったサイトを<br>
+                スムーズなコミュニケーションで</h1>
         </div>
+    </div>
 <!----------------------------------------------------------------------------------------------------------------------------------------->
     <div class="strongPointSpace">
     <div class="box">
@@ -62,4 +63,5 @@
             <form action="post" action="">
                 <button><i class="fab fa-github fa-3x my-purple faa-bounce  animated-hover"></i></button>
             </form>
+        </div>
 <?php get_footer() ;?>
