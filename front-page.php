@@ -52,7 +52,7 @@
 <!--------------------------------------------------------------------------------------------------------------------------------------->
             
         <div class="contact_indexSpace">
-            <form method="post" action="contact.html">
+            <form method="post" action="<?php echo esc_url( home_url( '/contact/' ) );?>">
                 <button class="contactButton"><h3>お問い合わせ</h3></button>
             </form>
         </div>
