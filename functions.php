@@ -1,5 +1,6 @@
 
 <?php
+
 /* style.css の読み込み */
 function css_scripts() {
     wp_enqueue_style( 'reset',
@@ -18,6 +19,7 @@ add_action( 'wp_enqueue_scripts', 'css_scripts');
 
 /*script.jsの読み込み */
 function link_scripts() {
-wp_enqueue_script( 'script.js', get_stylesheet_directory_uri() . '/js/script.js', '', '', true );
+    wp_enqueue_script( 'script.js', get_stylesheet_directory_uri() . '/js/script.js', '', '', true );
+
 }
 add_action('wp_enqueue_scripts', 'link_scripts' );

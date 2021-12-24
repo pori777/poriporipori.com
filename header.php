@@ -8,7 +8,9 @@
         <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" type="text/css" media="all" />
         <link rel="stylesheet" href="/style.css">
-        <link rel="stylesheet" href="js/script.js">
+        <link rel="stylesheet" href="/js/script.js">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
         <?php wp_head(); ?>
     </head>
 
@@ -18,6 +20,9 @@
             <div class="headerTitle">
                 <h1>pori</h1>
             </div>
+
+            <div id="menuListIcon"><span></span><span></span><span></span></div>
+            
             <nav id="menuList">
                 <ul>
                     <li><a href="<?php  echo esc_url( home_url ( '/' ) ); ?>">HOME</a></li>
@@ -25,10 +30,4 @@
                     <li><a href="<?php echo esc_url( home_url( '/contact/' ) );?>">CONTACT</a></li>
                 </ul>
             </nav>
-
-            <div id="menuListIcon">
-                <span class="innerLine" id="line1"></span>
-                <span class="innerLine" id="line2"></span>
-                <span class="innerLine" id="line3"></span>
-            </div>
         </header>

@@ -7,3 +7,18 @@ function menuListIcon() {
     document.getElementById('menuListIcon').addEventListener('click' , function () {
     menuListIcon();
     } );
+
+        //メニューの画像を動かす
+    jQuery(function () {
+    var fadeIn = jQuery('.fadeIn');
+    jQuery(window).scroll(function () {
+    jQuery(fadeIn).each(function () {
+        var offset = jQuery(this).offset().top;
+        var scroll = jQuery(window).scrollTop(); 
+        var windowHeight = jQuery(window).height();
+        if (scroll > offset - windowHeight + 150) {
+        jQuery(this).addClass("scrollIn");
+        }
+    });
+    });
+});
