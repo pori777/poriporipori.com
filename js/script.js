@@ -1,15 +1,18 @@
-function menuListIcon() {
-    document.getElementById('line1').classList.toggle('line_1');
-    document.getElementById('line2').classList.toggle('line_2');
-    document.getElementById('line3').classList.toggle('line_3');
-    document.getElementById('menuList').classList.toggle('in');
-    }
-    document.getElementById('menuListIcon').addEventListener('click' , function () {
-    menuListIcon();
-    } );
+jQuery(function($) {
+    jQuery("#menuListIcon").click(function () {//ボタンがクリックされたら
+        jQuery(this).toggleClass('active');//ボタン自身に activeクラスを付与し
+        jQuery("#menuList").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
+    });
+    
+    jQuery("#menuList a").click(function () {//ナビゲーションのリンクがクリックされたら
+        jQuery("#menuListIcon").removeClass('active');//ボタンの activeクラスを除去し
+        jQuery("#menuList").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
+    });
+});
 
-    //メニューの画像を動かす
-jQuery(function (jQuery) {
+
+//メニューの画像を動かす
+jQuery(function () {
     var fadeIn = jQuery('.fadeIn');
     jQuery(window).scroll(function () {
     jQuery(fadeIn).each(function () {
@@ -35,14 +38,4 @@ jQuery(function() {
         jQuery('.headerTitle').css({ 'top': '-' + hd_size + 'px' }).fadeOut(500);
     }
     });
-});
-
-jQuery("#menuListIcon").click(function () {//ボタンがクリックされたら
-	jQuery(this).toggleClass('active');//ボタン自身に activeクラスを付与し
-    jQuery("#menuList").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
-});
-
-jQuery("#menuList a").click(function () {//ナビゲーションのリンクがクリックされたら
-    jQuery("#menuListIcon").removeClass('active');//ボタンの activeクラスを除去し
-    jQuery("#menuList").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
 });
