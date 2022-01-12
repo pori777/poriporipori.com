@@ -1,45 +1,23 @@
-<!DOCTYPE html>
-<html lang="ja">
-    <head>
-        <meta charset="utf-8">
-        <title></title>
-        <meta name="viewport" content="width=device-width, initial-scale1.0">
-        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="script.js">
-    </head>
-
-    <body>
-        <div class="bg">
-        <header>
-            <div class="headerTitle">
-                <h1>pori</h1>
-            </div>
-            <nav id="menuList">
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="product.html">PRODUCT</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                </ul>
-            </nav>
-
-            <div id="menuListIcon">
-                <span class="innerLine" id="line1"></span>
-                <span class="innerLine" id="line2"></span>
-                <span class="innerLine" id="line3"></span>
-            </div>
-        </header>
-
-        <div class="contactSpace">
-            <h1>お問い合わせ</h1>
-            
+<section class="contact full-width">
+    <!--  見出し -->
+    <h2 class="heading sec__heading_contact">お問い合わせ</h2>
+    <!-- フォーム -->
+    <div class="contactForm" id="contactForm">
+        <div class="contact_item">
+            <label class="label" for ="name">氏名<span class="label_tag label_must">必須</span></label>
+            [text* your-name]
         </div>
-        <footer>
-            <div class="copyright">
-                <h5>© 2021 pori</h5>
-            </div>
-        </footer>
-    </div>
-    <script src="script.js"></script>
-</body>
-</html>
+        <div class="contact_item">
+            <label class="label" for="mail">メールアドレス<span class="label_tag label_must">必須</span>
+            </label>
+            [email* your-email]
+        </div>
+        <div class="contact_item">
+            <label class="label" for="comment">お問い合わせ内容<span class="label_tag label_must">必須</span>
+            </label>
+            [textarea* your-message]
+        </div>
+        <!-- ボタン -->
+        <div class="btnArea">[submit id:formbtn "送信"]</div>
+    </div><!--contactForm-->
+</section><!--End section_contact-->
