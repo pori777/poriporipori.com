@@ -1,0 +1,100 @@
+@use "variable" as var;
+
+/*------------------------------------------
+    ハンバーガーメニュー
+------------------------------------------*/
+.hamburgerIcon{
+    display: block;
+    position: absolute;
+    width: 42.5px;
+    height: 37.5px;
+    top: 22.5px;
+    right: 35px;
+    transition: 1s;
+    &__line{
+        display: block;
+        position: absolute;
+        right: 0;
+        width: 42.5px;/*アイコンの幅*/
+        height:2.5px;/*アイコンの線の太さ（高さ）*/
+        transition: 1s ;
+        border-radius: 10px;
+        background-color: var.$bg;
+    }
+}
+#line1{
+    top: 0;
+}
+#line2{
+    top: 17.5px;
+}
+#line3{
+    bottom:0;
+}
+/*メニューバーを押したときに表が右から出る動き*/
+.in{
+    transform: translateX(-100%);
+}
+.toggleLine_1,.toggleLine_2,.toggleLine_3{
+    background-color: var.$bg;
+}
+
+.toggleLine_1{
+    transform: translateY(17.5px) rotate(-45deg);
+    top: 0;
+}
+.toggleLine_2{
+    opacity: 0;
+}
+.toggleLine_3{
+    transform: translateY(-17.5px) rotate(45deg);
+    bottom: 0;
+}
+/*------------------------------------------
+    pageのtopに戻るボタン
+------------------------------------------*/
+.pageTop {
+    display: none;
+    position: fixed;
+    bottom: 75px;
+    right: 15px;
+    &__button{
+        font-size: 2rem;
+        color: #fff;
+    }
+    &__bg{
+        display: block;
+        background-color: #b88252;
+        text-align: center;
+        font-size: 1.2rem;
+        text-decoration: none;
+        padding: 5px 10px;
+        opacity: 0.5;
+        &:hover{
+            display: block;
+            background-color: #daa577;
+            text-align: center;
+            font-size: 1.2rem;
+            text-decoration: none;
+            padding:5px 10px;
+            opacity: 0.5;
+        }
+    }
+}
+
+/*------------------------------------------
+    パンくず
+------------------------------------------*/
+.breadCrumbs{
+    display: flex;
+    color: var.$accent;
+    margin: 0px 25px;
+    padding: 25px 0px;
+    &__item{
+        font-size: 1.8rem;
+        padding-right: 15px;
+        @media screen and (max-width:var.$sp){
+            font-size: 1.5rem;
+        }
+    }
+}

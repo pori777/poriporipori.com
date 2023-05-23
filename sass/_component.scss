@@ -1,0 +1,223 @@
+@use "variable" as var;
+/*------------------------------------------
+    nav
+------------------------------------------*/
+//header & footer
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var.$accent;
+    &__navItem{
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    &__navLink{
+        color: var.$accent;
+        text-decoration: none;
+    }
+    &__buttonLink{
+        padding-left: 10px;
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+
+/*------------------------------------------
+    section
+------------------------------------------*/
+.section__internalLinks{
+    padding-top: 35px;
+    @media screen and (max-width:var.$sp) {
+        padding-top: 125.5px;
+        margin-top: -80.5px;
+    }
+}
+
+.section__title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var.$accent;
+    font-size: 3.25rem;
+    text-align: center;
+    @media screen and (max-width:var.$sp){
+        font-size: 2.75rem;
+    }
+    &::before{
+        content: '';
+        width: 55px;
+        height: 2px;
+        margin-right: 20px;
+        background-color: var.$accent;
+    }
+    &::after{
+        content: '';
+        width: 55px;
+        height: 2px;
+        margin-left: 20px;
+        background-color: var.$accent;
+    }
+}
+/*------------------------------------------
+    button
+------------------------------------------*/
+.button{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    padding-top: 30px;
+    &__text{
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        font-size: 1.5rem;
+        padding: 1em 2.5em;
+        background-color: var.$accent;
+        color: #fff;
+        border-bottom: 5px solid #035d86;
+        transition: all 0.15s;
+        border-radius: 10px;
+        &:hover{
+            margin-top: 3px;
+            color: #fff;
+            background-color: #0484c0;
+            border-bottom: 2px solid #035d86;
+        }
+        @media screen and (max-width:var.$md){
+            font-size: 1.25rem;
+        }
+    }
+    &__shadow {
+        box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+    }
+    //contactForm7のボタン
+    input{
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        font-size: 1.5rem;
+        padding: 1em 2.5em;
+        margin: 0;
+        background-color: var.$accent;
+        color: #fff;
+        border-bottom: 5px solid #035d86;
+        transition: all 0.15s;
+        border-radius: 10px;
+        &:hover{
+            margin-top: 3px;
+            color: #fff;
+            background-color: #0484c0;
+            border-bottom: 2px solid #035d86;
+        }
+        @media screen and (max-width:var.$md){
+            font-size: 1.25rem;
+        }
+        @media screen and (max-width:var.$sp){
+            width: 100%;
+        }
+    }
+    .input__shadow {
+        box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+    }
+}
+
+/*------------------------------------------
+    postCards
+------------------------------------------*/
+.postCardWrapper{
+    padding-bottom: 35px;
+}
+.postCards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    @media screen and (max-width:var.$sp){
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+}
+.postCard{
+    padding-top: 35px;//投稿数が増えたときのためのpt
+    width: calc((100% - 120px) / 3);
+    @media screen and (max-width:var.$sp){
+        width: 85%;
+        align-items: center;
+        padding-top: 45px;
+    }
+    &__imgWrapper{
+        overflow: hidden;
+        border-radius: 15px ;
+    }
+    &__img{
+        width: 100%;
+        height: 56.25%;
+        transition: all ease 0.3s;
+    }
+    &__link{
+        display: block;
+        color: var.$text;
+        text-decoration: none;
+        &:hover{
+            .postCard__title{
+                text-decoration: underline;
+            }
+            .postCard__img{
+                transform: scale(1.2);
+            }
+        }
+    }
+    &__content{
+        background-color: #fff;
+        padding: 15px;
+    }
+    &__date{
+        font-size: 1.2rem;
+    }
+    &__title{
+        padding-bottom: 7.5px;
+        font-size: 1.5rem;
+    }
+}
+
+/*------------------------------------------
+    articleDetail
+------------------------------------------*/
+.articleWrapper{
+    @media screen and (max-width:var.$sp){
+        padding-bottom: 25px;
+    }
+}
+.articleDetail{
+    &__content{
+        background-color: #fff;
+        padding: 35px;
+    }
+    &__date{
+        font-size: 1.6rem;
+        padding-bottom: 2.5px;
+    }
+    &__title{
+        font-size: 2.1rem;
+        padding-bottom: 17.5px;
+    }
+    &__img{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    &__description{
+        font-size: 1.8rem;
+        padding-bottom: 10px;
+    }
+    &__link{
+        display: block;
+        a{
+            text-decoration: none;
+            color: var.$accent;
+            font-size: 1.6rem;
+        }
+    }
+}

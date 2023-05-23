@@ -1,0 +1,288 @@
+/*
+Theme Name: pori_portforio
+Theme URI: https://poriporipori.com
+Version: 1.0
+*/
+
+@charset "UTF-8";
+@use "reset";
+@use "base";
+@use "layout";
+@use "variable" as var;
+@use "mixin" as mix;
+@use "component";
+
+/*------------------------------------------
+    header
+------------------------------------------*/
+.pcHeader{
+    color: var.$accent;
+    padding: 20px 5px;
+    &__title{
+        font-size: 4.75rem;
+        margin-right: auto;
+    }
+    &__nav{
+        display: flex;
+        margin-top: auto;
+    }
+    &__navItem{
+        font-size: 2.2rem;
+        margin-right: 35px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}
+
+.spHeader{
+    position: fixed;
+    width: 100%;
+    color: var.$accent;
+    background-color: #5aacd1;
+    padding: 20px 25px;
+    z-index: 999;
+    &__title{
+        font-size: 3.75rem;
+        color: var.$bg;
+    }
+    &__nav{
+        text-align: center;
+        position: absolute;
+        height: 100vh; 
+        width: 100%;   
+        right: -100%;
+        top: 82.5px;
+        background-color: var.$bg;
+        transition: .5s;
+        padding-top: 82.5px;
+    }
+    &__navItem{
+        font-size: 2.2rem;
+        margin-bottom: 35px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+
+/*------------------------------------------
+    keyVisual
+------------------------------------------*/
+.keyVisual{
+    background-image: url("../img/pedro-henrique-santos-4IoS45J9pmk-unsplash.jpg");
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    @media screen and (max-width:var.$sp){
+        background-position: left;
+    }
+    &__text{
+        font-size: 3.75rem;
+        color: #fff;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 150px;
+    }
+    &__text-sub{
+        font-size: 2.25rem;
+        color: #fff;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 5px;
+    }
+}
+/*------------------------------------------
+    about
+------------------------------------------*/
+.about{
+    &__cards{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 20px;
+        @media screen and (max-width:var.$sp){
+            display: block;
+        }
+    }
+    &__card{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: calc((100% - 60px) / 3);
+        padding: .5em 2.5em 0.5em 2.5em;
+        border-radius: 50px;
+        @media screen and (max-width:var.$sp){
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+    &__cardTitle{
+        position: absolute;
+        display: inline;
+        font-size: 2rem;
+        border-right: 2px solid var.$accent;
+        writing-mode: vertical-lr;
+        text-orientation: upright; 
+        padding-right: 10px;
+        margin-right: 160px;
+        @media screen and (max-width:var.$sp){
+            margin-right: 190px;
+        }
+    }
+    &__cardContent{
+        width: 200px;
+        padding: 1.75em 4.75em;
+        background-image:radial-gradient(rgb(220, 220, 220) 30%, transparent 30%);
+        background-size: 5px 5px;
+        border-radius: 10px;
+        margin-left: 27px;
+        @media screen and (max-width:var.$sp){
+            width: 400px;
+            margin-left: 0px;
+        }
+    }
+    &__cardContentItem{
+        font-size: 1.6rem;
+        line-height: 1.8;
+        margin-top: 10px;
+        @media screen and (max-width:var.$sp){
+            text-align: center;
+        }
+    }
+    &__cardContentIcon{
+        padding-left: 7.5px;
+    }
+    .fa-twitter{
+        color: #1DA1F2;
+    }
+    .fa-instagram{
+        color: #E4405F;
+    }
+    .fa-github{
+        color: #000;
+    }
+}
+/*------------------------------------------
+    contact
+------------------------------------------*/
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 50px;
+    &__table{
+        width: 100%;
+        border-collapse:collapse;
+    }
+    &__item{
+        text-align: left;
+        width: 30%;
+        font-size: 1.8rem;
+        background-color: var.$contact_th;
+        padding: 20px;
+        border: 1px solid #ccc;
+        @media screen and (max-width:var.$sp){
+            padding: 20px 0px 20px 10px;
+            font-size: 1.4rem;
+        }
+    }
+    &__content{
+        width: 70%;
+        padding: 5px;
+        border: 1px solid #ccc;
+    }
+    &__button{
+        font-weight: bold;
+        color: #fff;
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: 30px;
+        cursor: pointer;
+        input{
+            background-color: var.$accent;
+        }
+    }
+}
+
+/*------------------------------------------
+    contactForm7の調整
+------------------------------------------*/
+.wpcf7-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input{
+    font-size: 1.4rem;
+    width: 100%;
+    padding: 15px 10px;
+    margin: 5px 20px;
+    border-radius: 6.5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    appearance: none;
+    max-width: 400px;
+    @media screen and (max-width:var.$sp){
+        width: 75%;
+        margin: 5px 10px;
+        max-width: 150px;
+    }
+}
+textarea{
+    font-size: 1.4rem;
+    width: 90%;
+    height: 350px;
+    padding: 10px;
+    margin: 10px 20px;
+    border-radius: 6.5px;
+    background-color: #fff;
+    @media screen and (max-width:var.$sp){
+        margin: 5px 10px;
+    }
+}
+
+.screen-reader-response ,
+.wpcf7-not-valid-tip{
+    display: none;
+}
+
+.wpcf7-response-output{
+    color: crimson;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 1.6rem;
+}
+
+/*------------------------------------------
+    footer
+------------------------------------------*/
+.footer{
+    flex-direction: column;
+    padding: 0px 5px 50px 5px;
+    &__nav{
+        display: flex;
+        margin-top: auto;
+        margin-top: 25px;
+    }
+    &__navItem{
+        font-size: 2rem;
+        margin-right: 65px;
+        &:last-child{
+            margin-right: 0;
+        }
+        @media screen and (max-width:var.$sp){
+            font-size: 1.4rem;
+            margin-right: 30px;
+        }
+    }
+    &__copyright{
+        font-size: 1.9rem;
+        margin-top: 15px;
+        @media screen and (max-width:var.$sp){
+            font-size: 1.4rem;
+        }
+    }
+}
